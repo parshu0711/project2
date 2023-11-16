@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, Lucida sans;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.navbar{
+    width: 85%;
+    margin: 0;
+    padding:  0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between; 
+}
+.navbar ul li{
+               list-style: none;
+               display: inline-block;
+               margin: 0 ;
+               position: relative;
+}
+.navbar ul li a{
+     text-decoration: none;
+    color: #0c0b0b;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+body{
+    text-align: center;
+    background-image: url(b2.jpg);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+*{
+  font-family: Lucida sans;
+}
+
+</style>
+</head>
+<body>
+     <div class="banner" >
+    <div class="navbar">
+    <ul>
+     <button>   <li><a href="index.html">Back</a></li></button>
+<ul></ul></div></div>
+
+<div class="about-section">
+  <h1>Smart City Project</h1>
+  <p>We are students of Lovely Proffessional University.</p>
+  <p>We are creating a smart city website which plays a pivotal role in creating
+    a connected,efficient,and dynamic urban environment.
+  </p>
+  
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="parul.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Parul Sharma</h2>
+        <p class="title">Student</p>
+        
+        <p>parul9001742gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="parshu.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Prashant Mete</h2>
+        <p class="title">Student</p>
+        
+        <p>prashantmete0711@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="kowsik.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Kowsik</h2>
+        <p class="title">Student</p>
+        
+        <p>Kowsik123@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
